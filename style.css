@@ -1,0 +1,72 @@
+body {
+  background-color: #fadadd;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: linear-gradient(to right, #20c997, #6f42c1);
+  padding: 40px;
+  border-radius: 60px; /* Sudut lebih melengkung */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 400px; /* Lebar maksimal */
+  height: auto; /* Ganti height menjadi auto agar lebih fleksibel */
+}
+
+.login-container h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 25px; /* Sudut lebih membulat */
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px; /* Membulatkan tombol */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+  .login-container {
+    padding: 20px; /* Padding yang nyaman di layar kecil */
+    max-width: 270px; /* Lebar maksimal lebih besar dari sebelumnya */
+    width: 100%; /* Agar lebar mengikuti layar */
+    height: auto; /* Membiarkan tinggi menyesuaikan konten */
+  }
+
+  .login-container h2 {
+    font-size: 18px; /* Ukuran font judul yang pas */
+  }
+
+  .login-container input,
+  .login-container button {
+    font-size: 14px; /* Ukuran font input dan tombol tetap terjaga */
+    padding: 10px; /* Padding yang lebih nyaman */
+  }
+}

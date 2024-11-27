@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="welcome-container">
+      <h2 id="welcome-message">Welcome, User!</h2>
+    </div>
+
+    <script>
+      // Ambil username dari URL query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const username = urlParams.get('username');
+
+      // Tampilkan pesan welcome dengan username
+      if (username) {
+        document.getElementById('welcome-message').innerText = `Welcome, ${username}!`;
+      }
+    </script>
+  </body>
+</html>
